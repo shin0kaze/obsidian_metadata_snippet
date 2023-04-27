@@ -9,5 +9,5 @@ def r(vpath, npath):
         for l in f:
             if l == '---\n': break
             k, v = l[:-1].split(': ')
-            d[k] = v
+            d[k] = v[1:-1]
     return d
