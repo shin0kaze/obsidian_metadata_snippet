@@ -35,6 +35,7 @@ def w(vpath, npath, dct):
     until_line = line_count(orig_dct)
     with open(fpath, 'r', encoding='utf-8') as fi:
         with open(fpath, 'r+', encoding='utf-8') as fo:
+            # not implemented yet
             if not is_meta_exists():
                 add_empty_meta()
             # first line is ---
